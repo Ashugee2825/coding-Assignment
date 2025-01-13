@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Marmeto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Marmeto</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icons">
+        <span>❤️</span>
+        <span>🛒</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Cart</h1>
+    <div class="breadcrumbs">Home  Cart</div>
+
+    <div class="cart-container">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Items will be rendered dynamically -->
+        </tbody>
+      </table>
+
+      <aside class="cart-totals">
+        <h2>Cart Totals</h2>
+        <p>Subtotal: <span id="subtotal">Rs. 0.00</span></p>
+        <p>Total: <span id="total">Rs. 0.00</span></p>
+        <button id="checkout">Check Out</button>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-item">
+      <p>High Quality</p>
+      <small>crafted from top materials</small>
+    </div>
+    <div class="footer-item">
+      <p>Warranty Protection</p>
+      <small>Over 2 years</small>
+    </div>
+    <div class="footer-item">
+      <p>Free Shipping</p>
+      <small>Order over $150</small>
+    </div>
+    <div class="footer-item">
+      <p>24/7 Support</p>
+      <small>Dedicated support</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
